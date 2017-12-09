@@ -42,7 +42,7 @@ func traverse (url url.URL, visited *map[string]bool, deadlinks *map[string]erro
 
 	(*visited)[url.String()] = true
 
-	if strings.HasPrefix(url.String(),"mailto") {
+	if strings.HasPrefix(url.String(),"mailto") || strings.HasPrefix(url.String(),"javascript") {
 		return;
 	}
 	

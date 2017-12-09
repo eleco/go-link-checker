@@ -3,6 +3,8 @@
 
 recursively follows and checks html links. 
 
+Example:
+
 ```
-go run App.go -url=<url to check for bad links>
+go run App.go -url=http://<...url...>
 ```
